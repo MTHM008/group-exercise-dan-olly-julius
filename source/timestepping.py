@@ -5,6 +5,7 @@ def forward_euler(rhs, Y, dt, **kwargs):
     # the right hand side f(y) is returned by the function rhs
     return Y + dt*rhs(Y, **kwargs)
 
+
 def timeloop(method, rhs, Y0, dt, tmax, **kwargs):
 
     t = 0
