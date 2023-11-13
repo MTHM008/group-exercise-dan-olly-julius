@@ -1,7 +1,7 @@
 import numpy as np
 
 def SIR(Y, r, a):
-    S, I, R = Y
+    S, I, _ = Y
     return [-r*I*S,r*I*S - a*I, a*I]
 
 def Brusselator(Y, a, b):
