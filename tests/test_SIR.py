@@ -17,5 +17,5 @@ def run_SIR():
 def test_Imax():
 
     t, y = run_SIR()
-    Imax = y[:,1].max()
+    Imax = y[:, 1].max()
     assert Imax > 14e6 and Imax < 15e6
